@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0a0a0a;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .test-box {
+            background: linear-gradient(135deg, #00ffff, #ff00ff);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Server Test Page</h1>
+    <div class="test-box">
+        <p>If you can see this page with colors and styling, the server is working!</p>
+        <p><a href="index.html" style="color: white;">Go to Portfolio</a></p>
+    </div>
+    
+    <script>
+        console.log('Test page loaded successfully!');
+        document.body.addEventListener('click', function() {
+            console.log('Click detected!');
+        });
+    </script>
+</body>
+</html>

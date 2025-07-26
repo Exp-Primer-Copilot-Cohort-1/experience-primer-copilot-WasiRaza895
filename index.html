@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzair - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Fallback styles in case external fonts don't load */
+        body { font-family: 'Arial', sans-serif; }
+        .hero-title, .brand-text, .section-title { font-family: 'Courier New', monospace; }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">UZAIR</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-text">Entering the Digital Universe...</div>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Animated Background Elements -->
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="brand-text">UZAIR</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Hello, I'm</span>
+                        <span class="title-name">UZAIR</span>
+                        <span class="title-role">Full Stack Developer</span>
+                    </h1>
+                    <p class="hero-description">
+                        Crafting digital experiences that transcend reality. 
+                        Welcome to my universe of code, creativity, and innovation.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="exploreUniverse()">
+                            <span>Explore Universe</span>
+                            <div class="btn-ripple"></div>
+                        </button>
+                        <button class="btn btn-secondary" onclick="viewProjects()">
+                            <span>View Projects</span>
+                            <div class="btn-ripple"></div>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-avatar">
+                        <div class="avatar-container">
+                            <div class="avatar-inner">
+                                <div class="avatar-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-text">Scroll to explore</div>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-subtitle">The Developer Behind the Magic</div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">
+                            I'm Uzair, a passionate full-stack developer who believes in creating 
+                            digital experiences that feel like stepping into another dimension. 
+                            With 5+ years of experience, I specialize in building scalable web 
+                            applications with stunning user interfaces.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100+</div>
+                                <div class="stat-label">Happy Clients</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="hologram-card">
+                            <div class="hologram-content">
+                                <div class="code-snippet">
+                                    <div class="code-line">const developer = {</div>
+                                    <div class="code-line">  name: "Uzair",</div>
+                                    <div class="code-line">  role: "Full Stack",</div>
+                                    <div class="code-line">  passion: "Innovation",</div>
+                                    <div class="code-line">  mission: "Transform Ideas"</div>
+                                    <div class="code-line">};</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-subtitle">Worlds I've Created</div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-project="1">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <button class="project-btn">Explore Project</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">NeuroShop AI</h3>
+                            <p class="project-description">
+                                An AI-powered e-commerce platform with neural network-based 
+                                recommendation engine and real-time inventory management.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">TensorFlow</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="2">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <button class="project-btn">Explore Project</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">CyberDash</h3>
+                            <p class="project-description">
+                                A futuristic dashboard for IoT devices with real-time data 
+                                visualization and 3D interactive charts.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">WebSocket</span>
+                                <span class="tech-tag">Three.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="3">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <button class="project-btn">Explore Project</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">QuantumChat</h3>
+                            <p class="project-description">
+                                End-to-end encrypted messaging app with quantum-inspired 
+                                security algorithms and immersive chat experiences.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">WebGL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="4">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <button class="project-btn">Explore Project</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">MetaLearn VR</h3>
+                            <p class="project-description">
+                                Virtual reality learning platform with immersive 3D environments 
+                                and AI-powered personalized learning paths.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">WebXR</span>
+                                <span class="tech-tag">A-Frame</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Arsenal</h2>
+                    <div class="section-subtitle">Powers That Drive Innovation</div>
+                </div>
+                <div class="skills-content">
+                    <div class="skills-categories">
+                        <div class="skill-category">
+                            <h3 class="category-title">Frontend</h3>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">React</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-level="95"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Vue.js</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-level="90"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Three.js</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-level="85"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">TypeScript</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-level="92"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="category-title">Backend</h3>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">Node.js</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-level="93"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Python</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-level="88"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">MongoDB</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-level="87"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">PostgreSQL</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-level="85"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="category-title">Emerging Tech</h3>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">AI/ML</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-level="80"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">WebXR</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-level="75"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Blockchain</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-level="70"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Cloud Computing</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-level="85"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Build Together</h2>
+                    <div class="section-subtitle">Ready to Create Something Amazing?</div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>uzair.dev@quantum.digital</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-UZAIR</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🌐</div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <span>Send Message</span>
+                                <div class="btn-ripple"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>UZAIR</h3>
+                    <p>Crafting Digital Universes</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Dribbble</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Uzair. All rights reserved. Built with passion and quantum computing.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Click Effect Canvas -->
+    <canvas id="click-canvas"></canvas>
+
+    <!-- Scripts -->
+    <script src="script-simple.js"></script>
+</body>
+</html>
